@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!--Metadatos-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Pablo Dominguez, Alvaro Ramirez">
+    <meta name="description" content="Entre 140 y 160 caracteres">
+    <meta name="keywords" content="HTML, BOOSTRAP, CSS, JAVASCRIPT">
+    
+    <!--Titulo-->
+    <title>DWR Actividad 3</title>
+
+    <!--Favicon-->
+    <link rel="icon" href="images/terminal-fill_dark.svg">
+
+    <!--Boostrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!--Styles CSS-->
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+
+    <!--Boostrap Navbar-->
+    <nav class="navbar navbar-expand-md bg-dark">
+      <div class="container-fluid">
+
+        <a class="navbar-brand" href="index.html">
+              <img src="images/terminal-fill.svg" width="50" alt="isotipo">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-uppercase" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-light" aria-disabled="true" href="instructions.html">Instrucciones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light-emphasis disabled" href="resources.html">Recursos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="delivery.html">Entrega</a>
+            </li>
+          </ul>
+        </div>
+
+        <form class="d-flex" role="login">
+          <input data-field id="user-login" class="form-control me-2" type="mail" placeholder="mail" aria-label="Search">
+          <button id="logout-btn" class="btn btn-outline-success text-uppercase" type="submit">logout</button>
+        </form>
+
+      </div>
+    </nav>
+
+    <div class="global-container bg-body-secondary"> <!-- abre container -->
+
+      <!-- resoruces content -->
+    <div class="resources-content">
+
+      <section class="boostrap-carousel">
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/boostrap_carousel_1.jpg" class="d-block w-100" alt="css">
+              </div>
+              <div class="carousel-item">
+                <img src="images/boostrap_carousel_2.jpg" class="d-block w-100" alt="html">
+              </div>
+              <div class="carousel-item">
+                <img src="images/boostrap_carousel_3.jpg" class="d-block w-100" alt="java script">
+              </div>
+              <div class="carousel-item">
+                <img src="images/boostrap_carousel_4.jpg" class="d-block w-100" alt="github">
+              </div>
+              <div class="carousel-item">
+                <img src="images/boostrap_carousel_5.jpg" class="d-block w-100" alt="visual studio code">
+              </div>
+              <div class="carousel-item">
+                <img src="images/boostrap_carousel_6.jpg" class="d-block w-100" alt="boostrap">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      </section>
+      
+      <section class="boostrap-cards bg-body-tertiary">
+        <h2 class="section-title bg-dark text-light">Recursos para realizar la actividad</h2>
+       
+        <div class="cards-group cards-group-1">
+            <div class="card">
+                <div class="card-header">
+                  <h2 class="text-uppercase">html</h2>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">HyperText Markup Language</h5>
+                  <p class="card-text">El código HTML es el lenguaje fundamental que utiliza un sitio web para estructurar y organizar su contenido. Actúa como el esqueleto del sitio, definiendo la disposición de los elementos como texto, imágenes, enlaces y otros elementos multimedia. </p>
+                  <a href="https://developer.mozilla.org/es/docs/Web/HTML" class="btn btn-secondary" target="_blank">+Info</a>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header">
+                  <h2 class="text-uppercase">css</h2>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Cascading Style Sheets</h5>
+                  <p class="card-text">El código CSS, o Hojas de Estilo en Cascada, determina la presentación visual y el diseño de un sitio web. Permite personalizar aspectos como el color, la tipografía, el espaciado y la disposición de los elementos HTML, mejorando así la apariencia y la experiencia del usuario en el sitio mientras navega a través de el.</p>
+                  <a href="https://developer.mozilla.org/es/docs/Web/CSS" class="btn btn-secondary" target="_blank">+Info</a>
+                </div>
+              </div>
+        </div>
+
+        <div class="cards-group cards-group-2">
+            <div class="card">
+                <div class="card-header">
+                  <h2 class="text-uppercase">java script</h2>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-secondary">Go somewhere</a>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header">
+                  <h2 class="text-uppercase">boostrap</h2>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-secondary">Go somewhere</a>
+                </div>
+              </div>
+        </div>
+
+        <div class="cards-group cards-group-3">
+            <div class="card">
+                <div class="card-header">
+                  <h2 class="text-uppercase">visual studio code</h2>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-secondary">Go somewhere</a>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header">
+                  <h2 class="text-uppercase">github</h2>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-secondary">Go somewhere</a>
+                </div>
+              </div>
+        </div>
+      </section>
+
+    </div>
+
+    </div> <!-- cierra container -->
+      
+       <!--Boostrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!--Own JS-->
+    <script src="scripts.js"></script>
+
+  </body>
+</html>
