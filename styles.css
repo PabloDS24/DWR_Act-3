@@ -1,0 +1,190 @@
+/* RESET CSS */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* GLOBAL STYLES */
+
+.global-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 30px;
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 2px;
+}
+
+nav{
+    width: 100%;
+}
+
+nav .container-fluid{
+    margin: 0px 10%;
+}
+
+/* SCREEN 1 - LOGIN */
+
+.login-form{
+    padding: 15% 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-title{
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+}
+
+.form-box{
+    width: 500px;
+    height: auto;
+    padding: 2em;
+    margin: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-group{
+    display: block;
+    position: relative;
+    width: calc(90%);
+    height: auto;
+    margin: 10px auto;
+    padding: 10% 10%;
+    text-transform: capitalize;
+}
+
+.form-box .form-group input {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    border: 0;
+    padding: 10px 10px;
+    margin-top: 20px;
+    font-size: 18px;
+   }
+   
+   .form-box .form-group label {
+    display: block;
+    position: absolute;
+    width: auto;
+    top: 10px;
+    left: 10px;
+    padding: 5px 5px;
+   }
+
+   .form-box button{
+    padding: 5px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin-top: 20px;
+   }
+
+   /* SCREEN 2 - INSTRUCTIONS */
+
+   .instructions-text{
+    width: 80%;
+    padding: 10% 0;
+   }
+
+   .section-title{
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+   }
+
+   /* SCREEN 2 - RESOURCES */
+
+   .resources-content{
+    display: flex;
+    flex-direction: column;
+   }
+
+   .boostrap-carousel{
+    margin: 2% 0;
+   }
+
+   .boostrap-cards{
+    margin: 2% 0;
+   }
+
+   .cards-group{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1%;
+   }
+
+   .card{
+    margin: 2% 2%;
+   }
+
+   /* SCREEN 3 - DELIVERY */
+
+    .delivery-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+   .delivery-intro-title{
+    display: flex;
+    flex-direction: row;
+   }
+
+   .delivery-intro-title svg{
+   margin-right: 2%;
+   }
+
+   .delivery-intro{
+    margin: 5% 15%;
+    padding: 2%;
+   }
+
+   .delivery-forms{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+
+   .alumn-form,
+   .activity-form,
+   .delivery-progress-bar{
+    width: 75%;
+    margin-bottom: 2%;
+   }
+
+   .email-box,
+   .file-box{
+    margin-top: 2%;
+   }
+
+   .email-box label,
+   .coments-box label,
+   .file-box label,
+   .file-box label{
+    margin-left: 2%;
+   }
+
+   .progress-bar-group{
+    margin-bottom: 2%;
+    font-size: medium;
+   }
+
+   .delivery-forms h3{
+    margin: 2% 0;
+    width: 75%;
+    text-align: center;
+   }
+
