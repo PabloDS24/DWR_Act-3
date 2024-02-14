@@ -29,6 +29,10 @@ nav .container-fluid{
     margin: 0px 10%;
 }
 
+#user-login{
+ margin-right: 5%;
+}
+
 /* SCREEN 1 - LOGIN */
 
 .login-form{
