@@ -192,3 +192,28 @@ nav .container-fluid{
     text-align: center;
    }
 
+/* ProgressBars Styles*/
+   .pb-1{
+    width: 5%;
+   }
+
+   .pb-2{
+    width: 25%;
+   }
+
+   .pb-3{
+    width: 50%;
+   }
+
+   .pb-4{
+    width: 75%;
+   }
+
+   .pb-5{
+    width: 100%;
+   }
+
+   .pb-animation{
+    transition: all 500ms ease;
+   }
+
