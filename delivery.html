@@ -83,53 +83,51 @@
             <section class="delivery-progress-bar">
                 <h4>Proceso de entrega</h4>
                 <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100">
-                    <div id="progress-color-1" class="progress-bar bg-success" style="width: 5%"></div>
+                    <div id="progress-color-1" class="progress-bar bg-success pb-1 pb-animation"></div>
                   </div>          
             </section>
             <form action="" class="alumn-form">
                 <div class="input-group">
                     <span class="input-group-text">Nombre / Apellidos</span>
-                    <input type="text" aria-label="First name" class="form-control">
-                    <input type="text" aria-label="Last name" class="form-control">
+                    <input type="text" aria-label="First name" class="form-control" id="f1-i1">
+                    <input type="text" aria-label="Last name" class="form-control" id="f1-i2">
                 </div>
                 <div class="input-group">
                     <span class="input-group-text">Fecha de nacimiento / Pais de residencia</span>
-                    <input type="text" aria-label="First name" class="form-control">
-                    <input type="text" aria-label="Last name" class="form-control">
-                </div>
-                <div>
-                    <input class="form-control" type="text" value="Escribe aquí tu ID de estudiante" aria-label="readonly input example" readonly>
+                    <input type="text" aria-label="birth-date" class="form-control"  id="f1-i3">
+                    <input type="text" aria-label="country" class="form-control"  id="f1-i4">
                 </div>
                 <div class="mb-3 email-box">
                     <label for="exampleFormControlInput1" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    <input type="email" class="form-control"  id="f1-i5" placeholder="name@example.com">
                 </div>
-                <button type="submit" class="btn btn-dark">Enviar</button>
+                <button type="submit" class="btn btn-dark" id="alumn-data-btn">Enviar</button>
             </form>
             
             <h3 class="text-uppercase bg-dark text-light">datos de la actividad</h3>
             <section class="delivery-progress-bar">
                 <h4>Proceso de entrega</h4>
                 <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100">
-                    <div id="progress-color-2" class="progress-bar bg-success" style="width: 5%"></div>
+                    <div id="progress-color-2" class="progress-bar bg-success pb-1"></div>
                   </div>          
             </section>
             <form action="" class="activity-form">
                 <div class="input-group">
                     <span class="input-group-text">Asignatura / Cuatrimestre</span>
-                    <input type="text" aria-label="First name" class="form-control">
-                    <input type="text" aria-label="Last name" class="form-control">
+                    <input type="text" aria-label="subjet" class="form-control" id="f2-i1">
+                    <input type="text" aria-label="period" class="form-control" id="f2-i2">
                 </div>
-                <div>
-                    <input class="form-control" type="text" value="Escribe aquí el nombre del Máster" aria-label="readonly input example" readonly>
-                </div>
+                <div class="input-group">
+                  <span class="input-group-text">Master</span>
+                  <input type="text" aria-label="master" class="form-control" id="f2-i3">
+              </div>
                 <div class="mb-3 file-box">
                     <label for="formFile" class="form-label">Adjunta archivo comprimido de la actividad</label>
-                    <input class="form-control" type="file" id="formFile">
+                    <input class="form-control" type="file" id="f2-i4">
                   </div>
                 <div class="mb-3 coments-box">
                     <label for="exampleFormControlTextarea1" class="form-label">Observaciones</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <textarea class="form-control" id="f2-i5" rows="3"></textarea>
                 </div>
                 <button type="submit" class="btn btn-dark">Enviar</button>  
             </form>
@@ -145,6 +143,7 @@
 
     <!--Own JS-->
     <script src="scripts.js"></script>
+
 
   </body>
 </html>
