@@ -1,7 +1,8 @@
-// Escucha Document Loaded DOM
+// ESCUCHA Document Loaded DOM
+
 document.addEventListener("DOMContentLoaded", () => {
 
-    // Formulario LOGIN del index
+// FORMULARIO LOGIN DEL INDEX
   
     // Validar formato del email
     function validateEmail(email) {
@@ -51,3 +52,149 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   
   });
+
+
+// ANIMACIÓN DE LAS PROGRESS BAR
+
+  document.addEventListener("DOMContentLoaded", function() {
+    
+    // Actualizar el progreso del primer formulario
+    function updateProgress1() {
+        // Obtener referencias de campos del primer formulario
+        const input1 = document.getElementById("f1-i1");
+        const input2 = document.getElementById("f1-i2");
+        const input3 = document.getElementById("f1-i3");
+        const input4 = document.getElementById("f1-i4");
+        const input5 = document.getElementById("f1-i5");
+
+        // Obtener progress bar 1
+        const progressBar = document.getElementById("progress-color-1");
+
+        // Mirar si los campos están rellenos y aplicar cambios
+        if (input1.value.trim() !== "") {
+            progressBar.classList.add("pb-1");
+        } else {
+            progressBar.classList.remove("pb-1");
+        }
+
+        if (input1.value.trim() !== "" && input2.value.trim() !== "") {
+            progressBar.classList.add("pb-2");
+        } else {
+            progressBar.classList.remove("pb-2");
+        }
+
+        if (input1.value.trim() !== "" && input2.value.trim() !== "" && input3.value.trim() !== "") {
+            progressBar.classList.add("pb-3");
+        } else {
+            progressBar.classList.remove("pb-3");
+        }
+
+        if (input1.value.trim() !== "" && input2.value.trim() !== "" && input3.value.trim() !== "" && input4.value.trim() !== "") {
+            progressBar.classList.add("pb-4");
+        } else {
+            progressBar.classList.remove("pb-4");
+        }
+
+        if (input1.value.trim() !== "" && input2.value.trim() !== "" && input3.value.trim() !== "" && input4.value.trim() !== "" && input5.value.trim() !== "") {
+            progressBar.classList.add("pb-5");
+        } else {
+            progressBar.classList.remove("pb-5");
+        }
+    }
+
+    // Función para verificar y actualizar el progreso del segundo formulario
+       function updateProgress2() {
+        // Obtener referencias de campos del segundo formulario
+        const input1 = document.getElementById("f2-i1");
+        const input2 = document.getElementById("f2-i2");
+        const input3 = document.getElementById("f2-i3");
+        const input4 = document.getElementById("f2-i4");
+        const input5 = document.getElementById("f2-i5");
+
+        // Obtener progress bar 2
+        const progressBar = document.getElementById("progress-color-2");
+
+        // Mirar si los campos están rellenos y aplicar cambios
+        if (input1.value.trim() !== "") {
+            progressBar.classList.add("pb-1");
+        } else {
+            progressBar.classList.remove("pb-1");
+        }
+
+        if (input1.value.trim() !== "" && input2.value.trim() !== "") {
+            progressBar.classList.add("pb-2");
+        } else {
+            progressBar.classList.remove("pb-2");
+        }
+
+        if (input1.value.trim() !== "" && input2.value.trim() !== "" && input3.value.trim() !== "") {
+            progressBar.classList.add("pb-3");
+        } else {
+            progressBar.classList.remove("pb-3");
+        }
+
+        if (input1.value.trim() !== "" && input2.value.trim() !== "" && input3.value.trim() !== "" && input4.value.trim() !== "") {
+            progressBar.classList.add("pb-4");
+        } else {
+            progressBar.classList.remove("pb-4");
+        }
+
+        if (input1.value.trim() !== "" && input2.value.trim() !== "" && input3.value.trim() !== "" && input4.value.trim() !== "" && input5.value.trim() !== "") {
+            progressBar.classList.add("pb-5");
+        } else {
+            progressBar.classList.remove("pb-5");
+        }
+    }
+
+    // Agregar escuchadores de eventos para los campos del primer formulario
+    document.getElementById("f1-i1").addEventListener("change", updateProgress1);
+    document.getElementById("f1-i2").addEventListener("change", updateProgress1);
+    document.getElementById("f1-i3").addEventListener("change", updateProgress1);
+    document.getElementById("f1-i4").addEventListener("change", updateProgress1);
+    document.getElementById("f1-i5").addEventListener("change", updateProgress1);
+
+    // Agregar escuchadores de eventos para los campos del segundo formulario
+    document.getElementById("f2-i1").addEventListener("change", updateProgress2);
+    document.getElementById("f2-i2").addEventListener("change", updateProgress2);
+    document.getElementById("f2-i3").addEventListener("change", updateProgress2);
+    document.getElementById("f2-i4").addEventListener("change", updateProgress2);
+    document.getElementById("f2-i5").addEventListener("change", updateProgress2);
+  });
+
+
+  // VERIFICACIÓN FORMATO DE EMAIL EN FORMULARIO
+
+  document.addEventListener("DOMContentLoaded", function() {
+    
+    // Verificar el formato de correo electrónico
+    function validateEmail(email) {
+        // Validar el formato de correo electrónico
+        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return regex.test(email);
+    }
+
+    // Evento de cambio en el campo de entrada de correo electrónico
+    function handleEmailChange() {
+        // Obtener el valor del input
+        var emailInput = document.getElementById("f1-i5");
+        var emailValue = emailInput.value.trim();
+
+        // Obtener referencia al botón de enviar
+        var submitButton = document.getElementById("alumn-data-btn");
+
+        // Verificar si el correo electrónico es válido
+        if (validateEmail(emailValue)) {
+            // Habilitar el botón de enviar
+            submitButton.disabled = false;
+        } else {
+            // Deshabilitar el botón de enviar
+            submitButton.disabled = true;
+
+            // Mostrar un mensaje de advertencia
+            alert("El formato del correo electrónico es incorrecto. Por favor, ingrese un correo electrónico válido.");
+        }
+    }
+
+    // Agregar un escuchador de eventos de cambio al campo de entrada de correo electrónico
+    document.getElementById("f1-i5").addEventListener("change", handleEmailChange);
+});
