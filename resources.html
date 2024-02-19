@@ -49,10 +49,13 @@
           </ul>
         </div>
 
-        <form class="d-flex" role="login">
-          <input data-field id="user-login" class="form-control me-2" type="mail" placeholder="mail" aria-label="Search">
-          <button id="logout-btn" class="btn btn-outline-success text-uppercase" type="submit">logout</button>
-        </form>
+        <form class="d-flex">
+          <div class="input-group">
+            <span class="input-group-text" id="basic-addon1">User</span>
+            <input id="user-login" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+            <a href="index.html"><button type="button" data-button="logout" class="btn btn-outline-success text-uppercase" id="logout-btn">logout</button></a>
+          </div>
+        </form> 
 
       </div>
     </nav>
