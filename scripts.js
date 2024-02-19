@@ -2,8 +2,6 @@
 
 document.addEventListener("DOMContentLoaded", () => {
 
-// FORMULARIO LOGIN DEL INDEX
-  
     // Validar formato del email
     function validateEmail(email) {
       const re = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
