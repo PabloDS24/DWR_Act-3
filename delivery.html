@@ -52,7 +52,7 @@
         <form class="d-flex">
           <div class="input-group">
             <span class="input-group-text" id="basic-addon1">User</span>
-            <input id="user-login" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+          <span class="input-group-text" id="mostrarNombre" aria-describedby="basic-addon1"></span>
             <a href="index.html"><button type="button" data-button="logout" class="btn btn-outline-success text-uppercase" id="logout-btn">logout</button></a>
           </div>
         </form> 
@@ -135,7 +135,10 @@
         </section>
     
     </div>  
-    
+    <script>
+      const nombre = localStorage.getItem('nombre');
+      document.getElementById('mostrarNombre').textContent = nombre;
+   </script>
     </div> <!-- cierra container -->
       
        <!--Boostrap JS-->

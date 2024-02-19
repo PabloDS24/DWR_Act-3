@@ -50,7 +50,8 @@
         </div>
 
         <form class="d-flex" role="login">
-          <input data-field id="user-login" class="form-control me-2" type="mail" placeholder="mail" aria-label="Search">
+          <span class="input-group-text" id="basic-addon1">User</span>
+          <span class="input-group-text" id="mostrarNombre" aria-describedby="basic-addon1"></span>
           <button id="logout-btn" class="btn btn-outline-success text-uppercase" type="submit">logout</button>
         </form>
 
@@ -196,7 +197,11 @@
       </section>
       
     </div>
-
+    
+    <script>
+      const nombre = localStorage.getItem('nombre');
+      document.getElementById('mostrarNombre').textContent = nombre;
+   </script>
     </div> <!-- cierra container -->
       
        <!--Boostrap JS-->

@@ -4,7 +4,7 @@
     <!--Metadatos-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Pablo Dominguez, Alvaro Ramirez">
+    <meta name="author" content="Pablo Dominguez, Alvaro Ramirez, Estela Martinez Calo">
     <meta name="description" content="Entre 140 y 160 caracteres">
     <meta name="keywords" content="HTML, BOOSTRAP, CSS, JAVASCRIPT">
     
@@ -52,10 +52,10 @@
         <form class="d-flex">
           <div class="input-group">
             <span class="input-group-text" id="basic-addon1">User</span>
-            <input id="user-login" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+            <span class="input-group-text" id="mostrarNombre" aria-describedby="basic-addon1"></span>
             <a href="index.html"><button type="button" data-button="logout" class="btn btn-outline-success text-uppercase" id="logout-btn">logout</button></a>
           </div>
-        </form> 
+                  </form> 
 
       </div>
     </nav>
@@ -125,8 +125,12 @@
             </div>
           </div>
         </div>
+    
+        <script>
+            const nombre = localStorage.getItem('nombre');
+            document.getElementById('mostrarNombre').textContent = nombre;
 
-      </section>
+        </script>
     </div> <!-- cierra container -->
       
        <!--Boostrap JS-->

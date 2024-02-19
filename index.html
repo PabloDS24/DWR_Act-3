@@ -32,12 +32,17 @@
                 <h1 class="text-light bg-dark">DWR - Actividad 3</h1>
             </div>
 
-            <form id="login-form">
+            <form id="login-form"  action="instructions.html" method="GET">
                 <div>
                     <div class="form-box bg-dark-subtle">
                         <div class="form-group bg-body-secondary">
                             <label for="email">usuario</label>
-                            <input data-field id="user" type="email" name="email" class="form-field" required placeholder="Ingresa tu email">
+                            <input data-field for="user" type="email" name="email" class="form-field" required placeholder="Ingresa tu email">
+                        </div>
+
+                        <div class="form-group bg-body-secondary">
+                            <label for="nombre">User:</label>
+                            <input type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre de usuario">
                         </div>
 
                         <div class="form-group bg-body-secondary">
@@ -45,14 +50,20 @@
                             <input data-field id="pw" type="text" name="surname" class="form-field" required placeholder="Ingresa tu contraseña">
                         </div>
 
-                        <a href="instructions.html"><button type="button" data-button="login" class="login-button btn btn-outline-success text-uppercase" id="index-login-btn">login</button></a>
+                        <a href="instructions.html">
+                            <button type="submit" data-button="login" class="login-button btn btn-outline-success text-uppercase" id="index-login-btn">Login</button>
+                        </a>
                     </div>
                 </div>
             </form>
-
         </section>
-        
-    
+        <script>
+            const formulario = document.getElementById('login-form');
+            formulario.addEventListener('submit', function(event) {
+                const nombre = document.getElementById('nombre').value;
+                localStorage.setItem('nombre', nombre);
+            });
+        </script>
     </div> <!-- cierra container -->
       
        <!--Boostrap JS-->
